@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+<center>
+<h1>Inheritance of A class....</h1>
+<script>
+class Animal{
+         common(){
+         return"<h1>I am Animal</h1>";
+   }
+} 
+   class Lion extends Animal{
+  introl(){
+
+    document.write("<h1>My name Lion</h1>");
+   document.write(this.common());
+ }
+}
+class Rat extends Animal{ 
+  intro(){
+    document.write("<h1>My name Rat</h1>");
+   document.write(this.common());
+ }
+}
+ x=new Lion();
+r=new Rat();
+x.introl();
+r.intro();
+</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+   
+</head>
+<body>
+    <center>
+        <h1                                                                                                                                                                                                                                                                                                                        onmouseover="change()">Events In JavaScript</h1>
+<h1  onmouseout="out()">Mouse Out click</h1>
+
+        <button onclick="show()">Show my Name</button>
+        <button ondblclick="display()">Date and Time</button>
+
+ <input onblur=" blur">
+    </center>
+    <script>
+        function show() {
+            		document.write("<h1>My Name is Sujata</h1>");
+       		 }
+
+        function display() {
+            		var date =  Date();
+         document.write("<h1>Current date and time: " + date + "</h1>");
+        }
+       function change(){
+  			document.write("<h1>Content the data..... </h1>")
+		}
+function out(){
+ 			 document.write("<h1>change content..... </h1>")
+		}
+function blur(){
+ 			 document.write("<h1>The text is onblur... </h1>")
+		}
+
+    </script>
+</body>
+</html>

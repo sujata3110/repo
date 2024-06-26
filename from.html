@@ -1,0 +1,103 @@
+
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            color: black;
+            text-align: left;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url("https://img.freepik.com/free-vector/abstract-digital-grid-vector-black-background_53876-111550.jpg") 
+             no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            color: black;
+            background: pink;
+            font-size: 50px;
+            font-family: 'Bell MT', serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         border-color:yellow;
+        }
+        .input-field, .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        .input-field input, .radio-group input, .checkbox-group input, select {
+            margin-right: 5px;
+        }
+        .checkbox-group label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body class="z">
+    <form>
+        <h1>Registration Form</h1>
+        <div class="input-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+        </div>
+        <div class="input-field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+        </div>
+        <div class="input-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <div class="input-field">
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob"><br>
+        </div>
+        <div class="radio-group">
+            <label>Course:</label><br>
+            <input type="radio" id="bca" name="course" value="BCA">
+            <label for="bca">BCA</label><br>
+            <input type="radio" id="bcom" name="course" value="BCOM">
+            <label for="bcom">BCOM</label><br>
+            <input type="radio" id="bcs" name="course" value="BCS">
+            <label for="bcs">BCS</label><br>
+        </div>
+        <div class="checkbox-group">
+            <label>Language Known:</label><br>
+            <input type="checkbox" id="hindi" name="language" value="Hindi">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="english" name="language" value="English">
+            <label for="english">English</label>
+            <input type="checkbox" id="marathi" name="language" value="Marathi">
+            <label for="marathi">Marathi</label><br>
+        </div>
+        <div class="input-field">
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality">
+                <option value="India">India</option>
+                <option value="USK">USK</option>
+                <option value="UK">UK</option>
+</select>
+<center>
+<input type="submit" id="submit" name="submit" value="Sumbit" onclick="myFunction()">
+</center>
+	<script>
+function myFunction() {
+  alert("Registration Successfully....");
+}
+</script>
+
+</from>
+</body>
+</html>
