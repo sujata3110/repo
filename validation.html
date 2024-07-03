@@ -1,0 +1,86 @@
+
+<html>
+<head>
+    <title>Vaidation Form</title>
+    <style>
+        body {
+            color: black;
+            text-align: left;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url("https://img.freepik.com/free-vector/abstract-digital-grid-vector-black-background_53876-111550.jpg") 
+             no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            color: black;
+            background: pink;
+            font-size: 50px;
+            font-family: 'Bell MT', serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         border-color:yellow;
+        }
+        .input-field, .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right: 10px;     
+              margin-right: 5px;
+            margin-right: 20px;
+      }
+         
+    </style>
+</head>
+<body class="z">
+    <form>
+        <h1>Form</h1>
+        <div class="input-field">
+            <label for="name"> User Name:</label>
+            <input type="text" id="name" name="name" required><br>
+        </div>
+        <div class="input-field">
+            <label for="password">Password:</label>
+            <input type="password" id="x" name="password" required><br>
+        </div>
+        <div class="input-field">
+            <label for="password">Repassword:</label>
+            <input type="password" id="y" name="" required><br>
+        </div>
+       
+<center>
+<input type="submit" id="submit" name="submit" value="Sumbit" onclick="myFunction()">
+</center>
+	<script>
+function myFunction() {
+ pwd1=document.getElementById("x").value
+ pwd2=document.getElementById("y").value
+      if(pwd1==pwd2) {
+ if(pwd1.length>=5&pwd1.length<=12){
+
+         if(pwd1=="[0-9a-zA-Z@#_-]"){}
+ else          
+  alert("Sorry!!! possword should be one numeric lowercase uppercase value")
+}
+  else          
+  alert("Sorry!!! possword length should be 5-12 Characters")
+}
+ 
+    else          
+  alert("Sorry!!! possword and confirm passwod is not match....")
+}
+</script>
+
+</from>
+</body>
+</html>
